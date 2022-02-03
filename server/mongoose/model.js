@@ -11,7 +11,10 @@ const model = (() => {
 
   // Atlas mongodb cluster와 연결
   const uri = `mongodb+srv://${MONGO_ID}:${MONGO_PW}@cluster0.7anl7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
-  mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+  mongoose.connect(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
 
   /**
    * Schema 연결
